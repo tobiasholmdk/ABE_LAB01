@@ -1,5 +1,17 @@
-<ul>
-    <li><%= student %></li>
-    <li>Tea</li>
-    <li>Milk</li>
-</ul>
+<head>
+    <title>Lab1c - Express</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<h1>Welcome to students list</h1>
+<table class="styled-table">
+    <tr class="active-row">
+        <th>Name</th>
+        <th>Grade</th>
+    </tr>
+    <% for(let i=0; i < students.length; i++) { %>
+    <tr class="active-row">
+        <td><%= students[i].name %></td>
+        <td><%= students[i].grade %></td>
+    </tr>
+    <% } %>
+</table>
